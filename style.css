@@ -3,7 +3,7 @@
   padding: 0;
 }
 body{
-background-color: #22223B;
+  background-color: #22223B; 
 }
 h1{
   text-align: center;
@@ -24,13 +24,21 @@ h1{
   object-fit: contain;
   mix-blend-mode: multiply;
 }
-
 #game-container{
   height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+#game-container div {
+  width: 400px;
+  color: white;
+  text-align: center;
+}
+#tm,#dm{
+  margin-top: 0.3rem;
+  font-size: 1.5rem;
 }
 .option{
   height: 55%;
@@ -59,7 +67,6 @@ h1{
 #user-score,#computer-score{
   font-size: 3.5rem;
 }
-
 #msg-container{
   margin-top: 2.5rem;
   text-align: center;

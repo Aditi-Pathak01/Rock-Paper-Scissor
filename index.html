@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock-Paper-Scissors Game</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="phone.css" media="only screen and (max-width:1030px)">
-
+    <link
+      rel="stylesheet"
+      href="phone.css"
+      media="only screen and (max-width:1025px)"
+    />
   </head>
   <body>
     <h1>Play Rock-Paper-Scissors NOW!</h1>
@@ -15,11 +18,17 @@
     </div>
 
     <div id="game-container">
+      <div>
+        <p>Matches PLAYED</p>
+        <p id="tm">0</p>
+      </div>
       <button class="option" id="rock"><img src="assets/rock.png" /></button>
       <button class="option" id="paper"><img src="assets/paper.png" /></button>
-      <button class="option" id="scissors">
-        <img src="assets/scissors.png" />
-      </button>
+      <button class="option" id="scissors"><img src="assets/scissors.png" /></button>
+      <div>
+        <p>Matches DRAW</p>
+        <p id="dm">0</p>
+      </div>
     </div>
 
     <div class="score-board">

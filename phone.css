@@ -3,19 +3,29 @@ body {
 }
 h1 {
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   line-height: 40px;
 }
 #bg{
-  height: 15vh;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
-
+#bg img {
+  height: 100%;
+}
 #game-container{
   gap: 0.5rem;
+  height: 25vh;
+  padding-top: 2rem;
+  align-items: start;
+}
+#game-container div {
+  width: 100px;
+  height: 68px;
+  font-size:0.8rem;
 }
 .option{
-  width:30%;
+  height: 60%;
+  width: 30%;
 }
 .score-board {
   font-size: 1.5rem;
@@ -23,4 +33,13 @@ h1 {
 #user-score,#computer-score{
   font-size: 2rem;
   margin-bottom: 0.5rem;
+}
+.score-board {
+ margin-top: -3rem;
+}
+#msg-container{
+  margin-top: 7rem;
+}
+#msg {
+  font-size: 2rem;
 }

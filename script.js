@@ -1,15 +1,21 @@
 let msg = document.querySelector("#msg")
 let userScorePara = document.querySelector("#user-score")
 let computerScorePara = document.querySelector("#computer-score");
+let tm = document.querySelector("#tm");
+let dm = document.querySelector("#dm");
 
 let userScore = 0;
 let computerScore = 0;
+let count=0;
+let drawMatch=0;
 
 let choices = document.querySelectorAll(".option");
 choices.forEach((choice)=>{
   choice.addEventListener("click",()=>{
   const userChoice = choice.getAttribute("id");
   playGame(userChoice);
+  count++;
+  tm.innerText = count;
 });
 });
 
@@ -43,6 +49,8 @@ const getCompChoice =()=>{
 const drawGame=()=>{
   msg.innerText= "This Match Was Draw!";
   msg.style.backgroundColor = "black";
+  drawMatch++;
+  dm.innerText = drawMatch;
 }
 const showWinner=(userWin,userChoice,compChoice)=>{
   if (userWin){
