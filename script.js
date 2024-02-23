@@ -1,6 +1,6 @@
 let msg = document.querySelector("#msg")
 let userScorePara = document.querySelector("#user-score")
-let computerScorePara = document.querySelector("#computer-score")
+let computerScorePara = document.querySelector("#computer-score");
 
 let userScore = 0;
 let computerScore = 0;
@@ -56,4 +56,5 @@ const showWinner=(userWin,userChoice,compChoice)=>{
     msg.innerText = `You Lost! ${compChoice} beats your ${userChoice}`;
     msg.style.backgroundColor = "red";
   }
+  
 }

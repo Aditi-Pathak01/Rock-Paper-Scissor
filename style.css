@@ -9,7 +9,8 @@ h1{
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 1rem;
-  color: white;
+  color: whitesmoke;
+  text-shadow: 2px 2px 2px darkgrey;
 }
 #bg{
  height: 20vh;
